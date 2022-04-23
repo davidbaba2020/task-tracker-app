@@ -14,7 +14,9 @@ import java.util.List;
 @NoArgsConstructor
 @Table(name = "app_user_table")
 public class UserOfApp extends BaseClass{
+    @Column(nullable = false, length = 20)
     private String firstName;
+    @Column(nullable = false, length = 20)
     private String lastName;
     @Column(nullable = false, unique = true, length = 45)
     private String email;
